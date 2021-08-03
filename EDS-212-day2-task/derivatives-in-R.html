@@ -215,6 +215,19 @@ dg_dz &lt;- D(expr = gz, name = &#39;z&#39;)
 
 dg_dz</code></pre>
 <pre><code>## -(1.9 * (3 * z^2))</code></pre>
+<div id="checked-by-hand---answers-match" class="section level3">
+<h3>^^ checked by hand - answers match</h3>
+</div>
+</div>
+<div id="partial-derivatives" class="section level2">
+<h2>Partial Derivatives</h2>
+<pre class="r"><code>f_xyz &lt;- expression(2 * (x ^ 2) * y - 3 * x + 1 + 4 * (z ^ 4) * x)
+
+df_dx &lt;- D(expr = f_xyz, &#39;x&#39;)
+
+df_dy &lt;- D(expr = f_xyz, &#39;y&#39;)
+
+df_dz &lt;- D(expr = f_xyz, &#39;z&#39;)</code></pre>
 </div>
 
 
