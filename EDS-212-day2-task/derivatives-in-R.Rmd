@@ -1,0 +1,56 @@
+---
+title: "eds 212 day 2 task"
+author: "Peter Menzies"
+date: "8/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## First order univariate derivatives
+
+### A
+
+```{r}
+fx <- expression(x ^ 2)
+
+df_dx <- D(expr = fx, name = 'x')
+
+x <- 3
+
+eval(expr = df_dx)
+```
+
+### B
+
+```{r}
+pa <- expression(2 * ((3* a + 2) ^ 4) - 5)
+
+dp_da <- D(expr = pa, name = 'a')
+
+a <- 1.2
+
+eval(expr = dp_da)
+```
+
+### C
+
+```{r}
+gt <- expression((-4 * t) / (((t ^ 2) + 1) ^ 3))
+
+dg_dt <- D(expr = gt, name = 't')
+
+t <- 0
+
+eval(expr = dg_dt)
+```
+
+
+
+
+
