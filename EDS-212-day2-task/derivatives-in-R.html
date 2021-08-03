@@ -207,6 +207,15 @@ eval(expr = dg_dt)</code></pre>
 <pre><code>## [1] -4</code></pre>
 </div>
 </div>
+<div id="higher-order-univariate-derivatives" class="section level2">
+<h2>Higher order univariate derivatives</h2>
+<pre class="r"><code>gz = expression(4.6 - (1.9 * (z ^ 3)))
+
+dg_dz &lt;- D(expr = gz, name = &#39;z&#39;)
+
+dg_dz</code></pre>
+<pre><code>## -(1.9 * (3 * z^2))</code></pre>
+</div>
 
 
 

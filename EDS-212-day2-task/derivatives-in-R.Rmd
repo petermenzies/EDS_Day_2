@@ -50,6 +50,15 @@ t <- 0
 eval(expr = dg_dt)
 ```
 
+## Higher order univariate derivatives
+
+```{r}
+gz = expression(4.6 - (1.9 * (z ^ 3)))
+
+dg_dz <- D(expr = gz, name = 'z')
+
+dg_dz
+```
 
 
 
